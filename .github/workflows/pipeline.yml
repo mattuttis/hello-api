@@ -18,7 +18,7 @@ jobs:
       - name: Downloads
         run: go get -t ./...
       - name: Run Test
-        run: go test ./...
+        run: make test
       - name: Coverage Check
         run: make coverage
       - name: Generate Report
