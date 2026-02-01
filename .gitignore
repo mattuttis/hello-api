@@ -31,3 +31,6 @@ api
 
 .idea/
 git
+
+coverage.out
+cover.html
