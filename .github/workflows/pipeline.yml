@@ -96,8 +96,8 @@ jobs:
     needs: test
     if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
     steps:
-      - name: Checkout the code into the Go module directory
-        uass: actions/checkout@v4
+      - name: Checkout the code into the Go module d
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - name: Deploy function
