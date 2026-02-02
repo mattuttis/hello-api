@@ -1,5 +1,8 @@
-runtime: go125
+runtime: go122
 main: ./cmd
+
+automatic_scaling:
+  max_instances: 2
 liveness_check:
   path: "/health"
   check_interval_sec: 30
