@@ -103,7 +103,7 @@ jobs:
       - name: Authenticate to Google Cloud
         uses: google-github-actions/auth@v0.6.0
         with:
-          credentials_json: $${{ secrets.gcp_credentials }}
+          credentials_json: ${{ secrets.gcp_credentials }}
       - name: Deploy function
         id: deploy
         uses: google-github-actions/deploy-cloud-functions@main
