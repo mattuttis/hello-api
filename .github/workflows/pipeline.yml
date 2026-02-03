@@ -133,7 +133,7 @@ jobs:
           install_components: app-engine-go
       - name: Deploy App
         id: deploy
-        uses: google-github-actions/deploy-appengine@v1
+        uses: google-github-actions/deploy-appengine@v2
       - id: test
         run: curl "${{ steps.deploy.outputs.url }}/translate/hello"
 
